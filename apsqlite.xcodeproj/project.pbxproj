@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B999D4CC1B42BFD3003787BB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B999D4CB1B42BFD3003787BB /* main.cpp */; };
+		B999D4D31B42C112003787BB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B999D4D21B42C112003787BB /* libsqlite3.dylib */; };
+		B999D4D61B42C59E003787BB /* db.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B999D4D41B42C59E003787BB /* db.cpp */; };
+		B999D4D91B42C7DE003787BB /* dbRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B999D4D71B42C7DE003787BB /* dbRequest.cpp */; };
+		B999D4DC1B42C85A003787BB /* dbObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B999D4DA1B42C85A003787BB /* dbObject.cpp */; };
+		B999D4DF1B42CD97003787BB /* dbModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B999D4DD1B42CD97003787BB /* dbModel.cpp */; };
+		B999D4E21B42CE08003787BB /* dbEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B999D4E01B42CE08003787BB /* dbEntity.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,17 @@
 /* Begin PBXFileReference section */
 		B999D4C81B42BFD3003787BB /* apsqlite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apsqlite; sourceTree = BUILT_PRODUCTS_DIR; };
 		B999D4CB1B42BFD3003787BB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B999D4D21B42C112003787BB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B999D4D41B42C59E003787BB /* db.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = db.cpp; sourceTree = "<group>"; };
+		B999D4D51B42C59E003787BB /* db.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = db.hpp; sourceTree = "<group>"; };
+		B999D4D71B42C7DE003787BB /* dbRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dbRequest.cpp; sourceTree = "<group>"; };
+		B999D4D81B42C7DE003787BB /* dbRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dbRequest.hpp; sourceTree = "<group>"; };
+		B999D4DA1B42C85A003787BB /* dbObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dbObject.cpp; sourceTree = "<group>"; };
+		B999D4DB1B42C85A003787BB /* dbObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dbObject.hpp; sourceTree = "<group>"; };
+		B999D4DD1B42CD97003787BB /* dbModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dbModel.cpp; sourceTree = "<group>"; };
+		B999D4DE1B42CD97003787BB /* dbModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dbModel.hpp; sourceTree = "<group>"; };
+		B999D4E01B42CE08003787BB /* dbEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dbEntity.cpp; sourceTree = "<group>"; };
+		B999D4E11B42CE08003787BB /* dbEntity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dbEntity.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B999D4D31B42C112003787BB /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +59,7 @@
 		B999D4BF1B42BFD3003787BB = {
 			isa = PBXGroup;
 			children = (
+				B999D4D21B42C112003787BB /* libsqlite3.dylib */,
 				B999D4CA1B42BFD3003787BB /* apsqlite */,
 				B999D4C91B42BFD3003787BB /* Products */,
 			);
@@ -57,6 +76,16 @@
 		B999D4CA1B42BFD3003787BB /* apsqlite */ = {
 			isa = PBXGroup;
 			children = (
+				B999D4E11B42CE08003787BB /* dbEntity.hpp */,
+				B999D4E01B42CE08003787BB /* dbEntity.cpp */,
+				B999D4DE1B42CD97003787BB /* dbModel.hpp */,
+				B999D4DD1B42CD97003787BB /* dbModel.cpp */,
+				B999D4DB1B42C85A003787BB /* dbObject.hpp */,
+				B999D4DA1B42C85A003787BB /* dbObject.cpp */,
+				B999D4D81B42C7DE003787BB /* dbRequest.hpp */,
+				B999D4D71B42C7DE003787BB /* dbRequest.cpp */,
+				B999D4D51B42C59E003787BB /* db.hpp */,
+				B999D4D41B42C59E003787BB /* db.cpp */,
 				B999D4CB1B42BFD3003787BB /* main.cpp */,
 			);
 			path = apsqlite;
@@ -89,7 +118,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = "Adam Zugaj";
+				ORGANIZATIONNAME = ArtProg;
 				TargetAttributes = {
 					B999D4C71B42BFD3003787BB = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -119,6 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B999D4CC1B42BFD3003787BB /* main.cpp in Sources */,
+				B999D4D91B42C7DE003787BB /* dbRequest.cpp in Sources */,
+				B999D4DC1B42C85A003787BB /* dbObject.cpp in Sources */,
+				B999D4DF1B42CD97003787BB /* dbModel.cpp in Sources */,
+				B999D4E21B42CE08003787BB /* dbEntity.cpp in Sources */,
+				B999D4D61B42C59E003787BB /* db.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +269,7 @@
 				B999D4D11B42BFD3003787BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
